@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    Layout = null;
+}
+@*@Html.Raw(ViewBag.htmltext)*@
+@*@Html.Raw(ViewBag.path)*@
+
+<section id="basic-vertical-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Audit Report</h3>
+                    @*<button type="button" onclick="location.href='@Url.Action("ConvertToWord")'">Convert to Word</button>*@
+                    @*<a href="@Url.Action("ConvertToWord", "Home")" class="btn btn-primary">Convert to Word</a>*@
+                    @*<a href="@Url.Action("ConvertToWord", "Home")" class="btn btn-primary">Convert to Word</a>*@
+                    <button type="button" onclick="location.href='@Url.Action("Privacy")'">Preview Report</button>
+                </div>
+                <div class="card-body">
+                    <div style="display: flex; justify-content: center;">
+                        <iframe src="@Url.Content("~/" + ViewBag.companyName)" width="1100px" height="700" marginwidth="50px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@*
+<section id="basic-vertical-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="flex: 1;">Audit Report</h3>
+                    <a href="@Url.Action("ConvertToWord", "Home")" class="btn btn-primary">Convert to Word</a>
+                </div>
+                <div class="card-body">
+                    <div style="display: flex; justify-content: center;">
+                        <iframe src="@Url.Content("~/" + ViewBag.companyName)" width="100%" height="700"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>*@
+
+
